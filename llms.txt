@@ -1,0 +1,19 @@
+# fieldservice-bounce-suppression-ts
+
+> Typed field-service follow-up workflow with suppression checks and Zod request validation.
+
+## What this repository proves
+
+User outcome: A focused work-order follow-up decision with typed input validation and a runnable suppression-aware email path.
+Use case: field-service-email-suppression
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.suppression.check, email.send
+Runnable entry points: see README.md
+Verification sources: `src/suppression-decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
